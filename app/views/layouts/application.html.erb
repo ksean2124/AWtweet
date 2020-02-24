@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>建築 words tweets</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <header class="header">
+      <div class="header__bar">
+        <h1>建築 words tweet</h1>
+        <div class="header_send">
+        投稿する
+        </div>
+      </div>
+    <%= yield %>
+  </body>
+</html>
