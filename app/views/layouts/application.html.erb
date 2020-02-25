@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>建築 words tweets</title>
+    <title>建築 words wiki</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,13 +10,14 @@
   </head>
 
   <body>
-      <header class="header">
-      <div class="header__bar">
-        <h1>建築 words tweet</h1>
+    <div class="header">
+      <div class="header_bar">
+        <%= link_to "建築 words wiki", '#', class: "header_bar_text" %>
         <div class="header_send">
-        投稿する
+          <%= link_to "新規投稿", '#', class: "header__right--btn" %>
         </div>
       </div>
+    </div>
     <%= yield %>
-  </body>
+  
 </html>
